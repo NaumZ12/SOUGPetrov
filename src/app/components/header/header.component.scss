@@ -1,0 +1,14 @@
+$bg:rgba(136, 136, 136, 0.654);
+
+@mixin display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header{
+  @include display;
+  background-color: $bg;
+  width: 100%;
+}

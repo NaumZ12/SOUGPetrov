@@ -1,0 +1,40 @@
+$bg:white;
+$color:black;
+$btn-color:rgba(240, 240, 240, 0.688);
+
+div
+{
+  background-color: $bg;
+  color: $color;
+  width: 400px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+input{
+  background-color: none;
+  border: none;
+  width: 90%;
+  height: 31.8px;
+  outline: none;
+  font-size:1.2rem ;
+  border: 2px solid rgb(254, 255, 255);
+
+
+
+}
+
+input:focus{
+  border: 2px solid rgba(0, 191, 255, 0.688);
+}
+button{
+  width: 30px;
+  align-items: center;
+  height: 100%;
+  background-color: $btn-color ;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius:none ;
+
+}
