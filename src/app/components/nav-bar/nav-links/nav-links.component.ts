@@ -8,8 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NavLinksComponent implements OnInit {
   @Input() links:string = "";
   @Input() bg: string = "";
+  @Input() text_color: string = "";
   @Input() text: string = "";
-
+  @Input() hover:boolean = false;
 
 
   constructor() {

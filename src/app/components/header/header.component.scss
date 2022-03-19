@@ -2,7 +2,7 @@ $bg:rgba(136, 136, 136, 0.654);
 
 @mixin display {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
