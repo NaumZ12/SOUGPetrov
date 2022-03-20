@@ -15,6 +15,15 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 
+import { MainPagesComponent } from './pages/main-pages/main-pages.component';
+import { AuthPageComponent } from './pages/auth-page/auth-page.component';
+import { HomePageComponent } from './pages/main-pages/home-page/home-page.component';
+import { FeedComponent } from './pages/main-pages/home-page/feed/feed.component';
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +31,15 @@ import {MatInputModule} from '@angular/material/input';
     SearchBarComponent,
     NavBarComponent,
     NavLinksComponent,
-    LangComponent
+    LangComponent,
+    MainPagesComponent,
+    AuthPageComponent,
+    HomePageComponent,
+    FeedComponent,
+
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +49,10 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+  
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
