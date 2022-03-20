@@ -19,6 +19,7 @@ import { MainPagesComponent } from './pages/main-pages/main-pages.component';
 import { AuthPageComponent } from './pages/auth-page/auth-page.component';
 import { HomePageComponent } from './pages/main-pages/home-page/home-page.component';
 import { FeedComponent } from './pages/main-pages/home-page/feed/feed.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 
@@ -36,6 +37,7 @@ import { FeedComponent } from './pages/main-pages/home-page/feed/feed.component'
     AuthPageComponent,
     HomePageComponent,
     FeedComponent,
+    CarouselComponent,
 
 
 

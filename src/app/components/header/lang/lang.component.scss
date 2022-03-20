@@ -7,6 +7,8 @@ div{
 
 
 
+
+
 mat-form-field{
   width: 230px;
   align-items: center;
@@ -16,11 +18,15 @@ mat-form-field{
 mat-label{
 align-items: center;
 display: flex;
-}
-input{
-  background-color: white;
+color: white;
+
 
 }
+
+mat-select{
+
+}
+
 
 .opt
 {
