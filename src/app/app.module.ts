@@ -16,6 +16,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4383e246e6d7682b3d4f682e787dc6c2ca6a130e
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 
