@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, PageComponent, SubPageComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchBarComponent } from './components/header/search-bar/search-bar.component';
@@ -15,11 +15,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 
-import { MainPagesComponent } from './pages/main-pages/main-pages.component';
-import { AuthPageComponent } from './pages/auth-page/auth-page.component';
-import { HomePageComponent } from './pages/main-pages/home-page/home-page.component';
-import { FeedComponent } from './pages/main-pages/home-page/feed/feed.component';
+
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -32,13 +30,11 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     SearchBarComponent,
     NavBarComponent,
     NavLinksComponent,
-    LangComponent,
-    MainPagesComponent,
-    AuthPageComponent,
-    HomePageComponent,
-    FeedComponent,
     CarouselComponent,
-
+    FooterComponent,
+    PageComponent,
+    SubPageComponent,
+    LangComponent
 
 
 
@@ -52,7 +48,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
-  
+    AppRoutingModule
+
 
 
   ],
