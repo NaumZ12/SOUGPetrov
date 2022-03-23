@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 >>>>>>> 4383e246e6d7682b3d4f682e787dc6c2ca6a130e
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 
 
 
@@ -38,7 +39,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent,
     PageComponent,
     SubPageComponent,
-    LangComponent
+    LangComponent,
+    NewsFeedComponent
 
 
 

@@ -1,0 +1,20 @@
+$color_white: white;
+
+@mixin flexbox {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+.Container {
+    height: 100vh;
+    @include flexbox;
+}
+
