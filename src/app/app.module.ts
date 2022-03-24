@@ -20,6 +20,7 @@ import { MatInputModule } from '@angular/material/input';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
+import { OtvoreniCasoviPageComponent } from './pages/main-pages/otvoreni-casovi-page/otvoreni-casovi-page.component';
 
 
 
@@ -37,7 +38,8 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
     PageComponent,
     SubPageComponent,
     LangComponent,
-    NewsFeedComponent
+    NewsFeedComponent,
+    OtvoreniCasoviPageComponent
 
 
 
