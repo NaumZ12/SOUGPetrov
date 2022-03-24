@@ -20,12 +20,12 @@ const routes: Routes = [
 
 
   {
-    path: '',
+    path: 'auth',
     component: AuthPageComponent,
     children: [
       {
         path: 'signin',
-        component: SigninPageComponent
+        component: SigninPageComponent,
       }
     ]
 
@@ -47,4 +47,3 @@ export class AppRoutingModule { }
 
 export const PageComponent = [MainPagesComponent, AuthPageComponent ]
 export const SubPageComponent = [HomePageComponent, SigninPageComponent ]
-
