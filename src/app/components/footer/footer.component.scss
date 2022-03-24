@@ -1,13 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: #fcfcfc;
-}
+
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: #111;
     height: 14rem;
@@ -19,7 +12,7 @@ footer{
     position: relative;
     min-height: 100vh;
 }
-  
+
 .content-wrap{
     padding-bottom: 2.5rem;
 }
@@ -91,7 +84,7 @@ footer{
     color:#929292;
     font-weight: 700;
 }
-   
+
 .social {
     float:right;
     text-align: right;

@@ -5,16 +5,14 @@ $color_white: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 
-html {
-    font-size: 62.5%;
-}
 
-.Container {
+
+.container {
     height: 100vh;
     @include flexbox;
-}
 
+}
