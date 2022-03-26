@@ -24,7 +24,6 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +37,7 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
     SubPageComponent,
     LangComponent,
     NewsFeedComponent,
+
 
 
 

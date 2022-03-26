@@ -4,13 +4,21 @@
   </div>
 
   <div class="container">
+
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
     <label for="uname"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="uemail" required>
+
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit">Sign In</button>
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Sign Up</button>
     <label>
       <p [ngStyle]="{'color': 'black'}"><input type="checkbox" checked="checked" name="remember"> Remember me</p>
     </label>
@@ -19,9 +27,9 @@
   <div class="container" style="background-color:#e4e4e4">
     <button type="button" class="cancelbtn">Cancel</button>
 
-    <span class="psw"><a href="">  |  Forgot password?     </a></span>
 
-    <span class="psw"><a routerLink="/auth/signup">   Create an account | </a></span>
+
+    <span class="psw"><a routerLink="/auth/signin">  Already have an account?  </a></span>
 
   </div>
 </form>
