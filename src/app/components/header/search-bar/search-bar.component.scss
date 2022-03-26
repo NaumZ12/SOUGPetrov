@@ -3,6 +3,14 @@ $color:rgb(255, 255, 255);
 $btn-color:rgb(68, 68, 68);
 $radius: 5px;
 
+@mixin borders {
+  border-top: 2px solid rgba(139, 139, 139, 0.246);
+  border-left: 2px solid rgba(139, 139, 139, 0.246);
+  border-bottom: 2px solid rgba(139, 139, 139, 0.246);
+
+
+}
+
 div
 {
   background-color: $bg;
@@ -25,7 +33,7 @@ input{
   height: 110%;
   outline: none;
   font-size:1.2rem ;
-  border: 2px solid $bg;
+  @include borders;
   background-color: $bg;
   color: $color;
   border-top-left-radius: $radius;
