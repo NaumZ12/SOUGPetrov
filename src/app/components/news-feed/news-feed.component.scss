@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body::before {
     display: block;
     content: '';
@@ -15,4 +16,23 @@ body::before {
       width: 50%;
     }
   }
+=======
+$color_white: white;
 
+@mixin flexbox {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.container {
+    height: 100vh;
+    @include flexbox;
+>>>>>>> 102216697718ab1c725f941e78b3acb438507e7f
+
+}

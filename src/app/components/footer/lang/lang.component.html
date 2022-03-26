@@ -1,11 +1,11 @@
 
 <div class="box">
 
-  <mat-form-field color="white"  appearance="outline">
+  <mat-form-field  color="primary"   appearance="outline">
     <mat-label> Choose Language </mat-label>
-    <mat-select>
-      <mat-option class="opt" value="mkd">Македонски</mat-option>
-      <mat-option class="opt" value="eng">English</mat-option>
+    <mat-select  >
+      <mat-option *ngFor="let country of countries" [value]="country.value"> {{country.viewValue}}  </mat-option>
+
 
     </mat-select>
 

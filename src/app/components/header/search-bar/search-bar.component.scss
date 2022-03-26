@@ -1,6 +1,7 @@
 $bg:rgb(46, 46, 46);
 $color:rgb(255, 255, 255);
 $btn-color:rgb(68, 68, 68);
+$radius: 5px;
 
 div
 {
@@ -10,7 +11,8 @@ div
   height: 34px;
   display: flex;
   align-items: center;
-
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
 
 
 }
@@ -26,6 +28,8 @@ input{
   border: 2px solid $bg;
   background-color: $bg;
   color: $color;
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
 
 
 
@@ -33,7 +37,7 @@ input{
 
 
 input:focus{
-  border: 2px solid rgb(0, 229, 255);
+  border: 2px solid rgb(0, 170, 255);
 }
 button{
   width: 60px;
