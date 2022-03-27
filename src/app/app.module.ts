@@ -20,6 +20,7 @@ import { MatInputModule } from '@angular/material/input';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
+import { NavFeedComponent } from './components/nav-feed/nav-feed.component';
 
 
 
@@ -37,6 +38,7 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
     SubPageComponent,
     LangComponent,
     NewsFeedComponent,
+    NavFeedComponent,
 
 
 
