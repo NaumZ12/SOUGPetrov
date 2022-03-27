@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+
+  
+
+
 
   ngOnInit(): void {
   }

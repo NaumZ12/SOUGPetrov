@@ -1,3 +1,10 @@
+
+h1{
+  color:black;
+  margin-top: 22px;
+  font-weight:600;
+  border-bottom: 1px solid black;
+}
 .news-container{
   background-color: rgba(238, 238, 238, 0.361);
   position: relative;
@@ -34,21 +41,27 @@ nav{
   display: flex;
   justify-content: space-between;
 
-  p{
-  color: black;
-    width: 500px;
-    margin-left: 100px;
-    
 
-  }
+}
+p{
+  width: 500px;
+  margin-left: 50px;
+  color:black;
+
+
 }
 
 
 img{
-  width: 600px;
+  width: 500px;
   height: 400px;
+
+
 }
 
 .new{
-  margin-left: 20px;
+  margin-left: 199px;
+  display:flex;
+  align-items:center;
+
 }
