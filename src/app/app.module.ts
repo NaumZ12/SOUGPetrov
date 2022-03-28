@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SearchBarComponent } from './components/header/search-bar/search-bar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NavLinksComponent } from './components/nav-bar/nav-links/nav-links.component';
@@ -15,12 +16,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-
-
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 import { NavFeedComponent } from './components/nav-feed/nav-feed.component';
+import { NovostComponent } from './pages/main-pages/novosti-page/novost/novost.component';
+
 
 
 
@@ -39,6 +40,8 @@ import { NavFeedComponent } from './components/nav-feed/nav-feed.component';
     LangComponent,
     NewsFeedComponent,
     NavFeedComponent,
+    NovostComponent,
+
 
 
 
@@ -53,7 +56,8 @@ import { NavFeedComponent } from './components/nav-feed/nav-feed.component';
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatPaginatorModule
 
 
 

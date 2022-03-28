@@ -7,6 +7,7 @@ import { SigninPageComponent } from './pages/auth-page/signin-page/signin-page.c
 import { OtvoreniCasoviPageComponent } from './pages/main-pages/otvoreni-casovi-page/otvoreni-casovi-page.component';
 import { ProektiPageComponent } from './pages/main-pages/proekti-page/proekti-page.component';
 import { SignupPageComponent } from './pages/auth-page/signup-page/signup-page.component';
+import { NovostiPageComponent } from './pages/main-pages/novosti-page/novosti-page.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,10 @@ const routes: Routes = [
     path: '',
     component: MainPagesComponent,
     children: [
+      {
+        path: 'search/:searchTerm',
+        component: HomePageComponent
+      },
       {
       path: 'home',
       component: HomePageComponent
@@ -52,7 +57,7 @@ const routes: Routes = [
     },
     {
       path: 'novosti',
-      component: ProektiPageComponent,
+      component: NovostiPageComponent,
     },
     {
       path: 'proekti',
@@ -97,4 +102,4 @@ export class AppRoutingModule { }
 
 
 export const PageComponent = [MainPagesComponent, AuthPageComponent ]
-export const SubPageComponent = [HomePageComponent, SigninPageComponent, SignupPageComponent,   OtvoreniCasoviPageComponent, ProektiPageComponent  ]
+export const SubPageComponent = [HomePageComponent,NovostiPageComponent, SigninPageComponent, SignupPageComponent,   OtvoreniCasoviPageComponent, ProektiPageComponent  ]
