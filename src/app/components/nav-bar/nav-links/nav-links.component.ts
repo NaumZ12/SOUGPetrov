@@ -12,6 +12,8 @@ export class NavLinksComponent implements OnInit {
   @Input() text_color: string = "";
   @Input() text: string = "";
   @Input() hover:boolean = false;
+  @Input() link:string = "";
+
 
 
   constructor() {

@@ -2,8 +2,16 @@ a{
   color: white;
 }
 
+a.active{
+
+button{
+  background-color: #5dbceb;
+}
+}
+
 button{
   background-color: none;
+  outline: none;
 
 }
 

@@ -15,7 +15,7 @@ const routes: Routes = [
     component: MainPagesComponent,
     children: [
       {
-      path: '',
+      path: 'home',
       component: HomePageComponent
     },
     {
@@ -23,7 +23,43 @@ const routes: Routes = [
       component: OtvoreniCasoviPageComponent,
     },
     {
+      path: 'about',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'nasoki',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'upisi',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'predmeti',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'dokumenti',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'contackt',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'raspored',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'novosti',
+      component: ProektiPageComponent,
+    },
+    {
       path: 'proekti',
+      component: ProektiPageComponent,
+    },
+    {
+      path: 'e-nastava',
       component: ProektiPageComponent,
     },
     ]

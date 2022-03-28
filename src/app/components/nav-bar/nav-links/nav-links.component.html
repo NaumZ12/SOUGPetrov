@@ -1,3 +1,3 @@
 <div  >
-  <a [routerLink]="[links]"><button mat-button [ngStyle]="{backgroundColor: hover==true  ? bg  : 'none' }" >{{text}}</button></a>
+  <a routerLinkActive="{{link}}" [routerLink]="[links]"><button mat-button [ngStyle]="{backgroundColor: hover==true  ? bg  : 'none' }" >{{text}}</button></a>
 </div>
