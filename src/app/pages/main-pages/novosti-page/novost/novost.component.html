@@ -7,15 +7,15 @@
           <div class="d-flex flex-row"></div>
           <div class="row news-card p-3 bg-black">
               <div class="col-md-4">
-                  <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" [src]="img"></div>
+                  <div class="feed-image"><a href=""><img class="news-feed-image rounded img-fluid img-responsive" [src]="img"></a></div>
               </div>
               <div class="col-md-8">
-                  <div class="news-feed-text">
-                     <span> <h5>{{text}}</h5><br></span>
+                  <div class="news-feed-title">
+                     <span> <a href=""><h2>{{title}}</h2></a><br></span>
                       <div class="d-flex flex-row justify-content-between align-items-center mt-2">
                           <div class="d-flex creator-profile">
                               <div class="d-flex flex-column ml-8">
-                                  <h6 class="username">{{by}}</h6><span class="date">{{date}}</span>
+                                  <h4 class="username">{{date}} by <a href="">{{by}}</a></h4>
                               </div>
                           </div>
                       </div>
