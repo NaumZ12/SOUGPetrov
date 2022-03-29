@@ -8,6 +8,8 @@ import { OtvoreniCasoviPageComponent } from './pages/main-pages/otvoreni-casovi-
 import { ProektiPageComponent } from './pages/main-pages/proekti-page/proekti-page.component';
 import { SignupPageComponent } from './pages/auth-page/signup-page/signup-page.component';
 import { NovostiPageComponent } from './pages/main-pages/novosti-page/novosti-page.component';
+import { OneComponent } from './pages/main-pages/novosti-page/one/one.component';
+import { TwoComponent } from './pages/main-pages/novosti-page/two/two.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,7 @@ const routes: Routes = [
         component: HomePageComponent
       },
       {
-      path: 'home',
+      path:  '',
       component: HomePageComponent
     },
     {
@@ -58,6 +60,11 @@ const routes: Routes = [
     {
       path: 'novosti',
       component: NovostiPageComponent,
+      children:[
+        {path: "one", component: OneComponent},
+        {path: "two", component: TwoComponent},
+
+      ]
     },
     {
       path: 'proekti',
@@ -103,3 +110,4 @@ export class AppRoutingModule { }
 
 export const PageComponent = [MainPagesComponent, AuthPageComponent ]
 export const SubPageComponent = [HomePageComponent,NovostiPageComponent, SigninPageComponent, SignupPageComponent,   OtvoreniCasoviPageComponent, ProektiPageComponent  ]
+export const NovostPageComponent = [OneComponent, TwoComponent]
