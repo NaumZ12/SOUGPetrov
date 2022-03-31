@@ -1,6 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-
+import { Component, OnInit, Input } from '@angular/core';
 
 
 
@@ -12,7 +10,7 @@ import { MatPaginator } from '@angular/material/paginator';
 export class NovostiPageComponent implements OnInit {
 
 
-
+  
 
 
   constructor() { }

@@ -24,6 +24,7 @@ import { NovostComponent } from './pages/main-pages/novosti-page/novost/novost.c
 
 
 import {NgxPaginationModule} from 'ngx-pagination';
+import { SearchPageComponent } from './pages/main-pages/search-page/search-page.component';
 
 
 
@@ -42,7 +43,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     NewsFeedComponent,
     NavFeedComponent,
     NovostComponent,
-    NovostPageComponent
+    NovostPageComponent,
+    SearchPageComponent
 
 
 
