@@ -5,19 +5,21 @@ a{
 a.active{
 
 button{
-  background-color: #5dbceb;
+  border-bottom: 2px solid #5dbceb;
 }
 }
 
 button{
   background-color: none;
   outline: none;
+  border-radius: 0;
+
 
 }
 
 button:hover
 {
   transition: 0.6s;
-background-color:#5dbceb ;
+background-color: rgba(255, 255, 255, 0.116) ;
 
 }
