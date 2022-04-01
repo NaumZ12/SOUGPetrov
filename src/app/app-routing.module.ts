@@ -10,6 +10,7 @@ import { SignupPageComponent } from './pages/auth-page/signup-page/signup-page.c
 import { NovostiPageComponent } from './pages/main-pages/novosti-page/novosti-page.component';
 import { OneComponent } from './pages/main-pages/novosti-page/one/one.component';
 import { TwoComponent } from './pages/main-pages/novosti-page/two/two.component';
+import { SearchPageComponent } from './pages/main-pages/search-page/search-page.component';
 
 
 const routes: Routes = [
@@ -18,8 +19,8 @@ const routes: Routes = [
     component: MainPagesComponent,
     children: [
       {
-        path: 'search/:searchTerm',
-        component: HomePageComponent
+        path: 'search',
+        component: SearchPageComponent
       },
       {
       path:  '',
@@ -109,5 +110,5 @@ export class AppRoutingModule { }
 
 
 export const PageComponent = [MainPagesComponent, AuthPageComponent ]
-export const SubPageComponent = [HomePageComponent,NovostiPageComponent, SigninPageComponent, SignupPageComponent,   OtvoreniCasoviPageComponent, ProektiPageComponent  ]
+export const SubPageComponent = [HomePageComponent,NovostiPageComponent, SigninPageComponent,SearchPageComponent,  SignupPageComponent,   OtvoreniCasoviPageComponent, ProektiPageComponent  ]
 export const NovostPageComponent = [OneComponent, TwoComponent]

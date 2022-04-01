@@ -8,11 +8,14 @@ import { Router } from '@angular/router';
 })
 export class NavLinksComponent implements OnInit {
   @Input() links:string = "";
-  @Input() bg: string = "#90CAF9 ";
+  @Input() bg: string = "lightgray ";
   @Input() text_color: string = "";
   @Input() text: string = "";
   @Input() hover:boolean = false;
   @Input() link:string = "";
+  @Input() icon:string = "";
+
+
 
 
 

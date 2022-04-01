@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, PageComponent, SubPageComponent, NovostPageComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SearchBarComponent } from './components/header/search-bar/search-bar.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -24,7 +24,7 @@ import { NovostComponent } from './pages/main-pages/novosti-page/novost/novost.c
 
 
 import {NgxPaginationModule} from 'ngx-pagination';
-import { SearchPageComponent } from './pages/main-pages/search-page/search-page.component';
+
 
 
 
@@ -44,7 +44,7 @@ import { SearchPageComponent } from './pages/main-pages/search-page/search-page.
     NavFeedComponent,
     NovostComponent,
     NovostPageComponent,
-    SearchPageComponent
+
 
 
 
