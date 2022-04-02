@@ -12,17 +12,53 @@ header{
   @include display;
   background-color: $bg;
   width: 100%;
+  height: 70px;
 }
 
 .header-right{
   @include display;
 
 }
+.header-left{
+  @include display;
+  color: white;
 
-a{
-  margin-left:80px;
+
 
 }
+
+w-page{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: 0;
+  padding: 50px;
+
+  p{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 17px;
+
+    }
+
+
+  mat-icon{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+  }
+}
+
+img{
+  width: 65px;
+  height: 65px;
+
+}
+
 
 .sign{
   padding: 15px;

@@ -1,11 +1,15 @@
 a{
   color: white;
+margin-left: 40px;
+
 }
 
 a.active{
 
 button{
-  border-bottom: 2px solid #5dbceb;
+  border-bottom: 2px solid #5fcaff;
+  color: #5fcaff;
+ 
 }
 }
 
@@ -19,7 +23,8 @@ button{
 
 button:hover
 {
-  transition: 0.6s;
+  border-radius: 10px;
+
 background-color: rgba(255, 255, 255, 0.116) ;
 
 }

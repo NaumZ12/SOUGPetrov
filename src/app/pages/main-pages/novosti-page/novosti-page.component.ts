@@ -9,7 +9,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NovostiPageComponent implements OnInit {
 
-
   
 
 

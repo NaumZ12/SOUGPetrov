@@ -11,55 +11,52 @@ import { NovostiPageComponent } from './pages/main-pages/novosti-page/novosti-pa
 import { OneComponent } from './pages/main-pages/novosti-page/one/one.component';
 import { TwoComponent } from './pages/main-pages/novosti-page/two/two.component';
 import { SearchPageComponent } from './pages/main-pages/search-page/search-page.component';
+import { EngPagesComponent } from './pages/eng-pages/eng-pages.component';
+
+
 
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'mk',
     component: MainPagesComponent,
     children: [
       {
         path: 'search',
-        component: SearchPageComponent
+        component: SearchPageComponent,
+        data: {title: "SEARCH"},
+        children: [{path: ':searchItem', component: SearchPageComponent}]
       },
       {
-      path:  '',
+      path:  'home',
+      data: {title: "ДОМА"},
       component: HomePageComponent
     },
-    {
-      path: 'otvoreni_casovi',
-      component: OtvoreniCasoviPageComponent,
-    },
+
     {
       path: 'about',
       component: ProektiPageComponent,
+      data: {title: "ЗА ГИМНАЗИЈАТА"},
+
     },
     {
       path: 'nasoki',
+      data: {title: "НАСОКИ"},
       component: ProektiPageComponent,
     },
     {
       path: 'upisi',
-      component: ProektiPageComponent,
-    },
-    {
-      path: 'predmeti',
-      component: ProektiPageComponent,
-    },
-    {
-      path: 'dokumenti',
+      data: {title: "УПИСИ"},
       component: ProektiPageComponent,
     },
     {
       path: 'contackt',
-      component: ProektiPageComponent,
-    },
-    {
-      path: 'raspored',
+      data: {title: "КОНТАКТ"},
       component: ProektiPageComponent,
     },
     {
       path: 'novosti',
+      data: {title: "НОВОСТИ"},
       component: NovostiPageComponent,
       children:[
         {path: "one", component: OneComponent},
@@ -75,8 +72,16 @@ const routes: Routes = [
       path: 'e-nastava',
       component: ProektiPageComponent,
     },
+
     ]
   },
+
+  {
+    path: 'en',
+    component: EngPagesComponent,
+  },
+
+
 
 
   {
@@ -109,6 +114,6 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 
-export const PageComponent = [MainPagesComponent, AuthPageComponent ]
+export const PageComponent = [MainPagesComponent, AuthPageComponent, EngPagesComponent ]
 export const SubPageComponent = [HomePageComponent,NovostiPageComponent, SigninPageComponent,SearchPageComponent,  SignupPageComponent,   OtvoreniCasoviPageComponent, ProektiPageComponent  ]
 export const NovostPageComponent = [OneComponent, TwoComponent]

@@ -25,9 +25,6 @@ import { NovostComponent } from './pages/main-pages/novosti-page/novost/novost.c
 
 import {NgxPaginationModule} from 'ngx-pagination';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +47,6 @@ import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
-
   ],
   imports: [
     BrowserModule,
@@ -63,8 +59,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     MatInputModule,
     AppRoutingModule,
     MatPaginatorModule,
-    NgxPaginationModule
-
+    NgxPaginationModule,
 
 
   ],
