@@ -1,0 +1,22 @@
+.cont{
+  position: relative;
+  top: 200px;
+  left: 400px;
+  color: black;
+  background-color: white;
+  align-items: center;
+  width: 700px;
+  height: 260%;
+  border-radius: 15px;
+}
+
+.container{
+  position: absolute;
+  top: 40px;
+}
+
+.nav{
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}

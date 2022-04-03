@@ -27,5 +27,16 @@ footer {
   background: #212529;
 }
 
+p{
+  align-items: center;
+  display: flex;
+  mat-icon{
+    margin-right: 15px;
+  }
+}
+a{
+  align-items: center;
+  display: flex;
+}
 
 

@@ -10,11 +10,7 @@ interface Country {
   styleUrls: ['./lang.component.scss']
 })
 export class LangComponent implements OnInit {
-  countries: Country[] = [
-    {value: 'macedonian-0', viewValue: 'Македонски'},
-    {value: 'english-1', viewValue: 'English'},
 
-  ];
 
   constructor() { }
 

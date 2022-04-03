@@ -4,34 +4,30 @@
       <div class="container py-4">
           <div class="row gy-4 gx-5">
               <div class="col-lg-4 col-md-6">
-                  <h3 class="h1 text-white">Контактирајте не:</h3>
-                  <p class="small text-muted">T 031/375-025 | 031/377-120</p>
-                  <p class="small text-muted">Емаил: sougorcepetrov[at]yahoo.com</p>
-                  <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="https://gjorchepetrov.edu.mk/">gjorchepetrov.edu.mk</a></p>
+                  <h3 class="h1 text-white">{{contact}}</h3>
+                  <p class="small text-muted"><mat-icon>phone</mat-icon>  031/375-025 | 031/377-120</p>
+                  <p class="small text-muted"><mat-icon>email</mat-icon>  sougorcepetrov[at]yahoo.com</p>
+                  <p class="small text-muted mb-0"><mat-icon>copyright</mat-icon>  All rights reserved   </p>
+                  <br>
+                  <p class="small text-muted mb-0"> <mat-icon>school</mat-icon>  <a class="text-primary" href="https://gjorchepetrov.edu.mk/"> gjorchepetrov.edu.mk </a>   </p>
               </div>
               <div class="col-lg-2 col-md-6">
-                  <h2 class="text-white mb-3">Категории</h2>
+                  <h2 class="text-white mb-3">{{category}}</h2>
                   <ul class="list-unstyled text-muted">
-                      <li><a routerLink="/home">Почетна</a></li>
-                      <li><a routerLink="/abot">За Гимназијата</a></li>
-                      <li><a routerLink="/novosti">Новости</a></li>
-                      <li><a routerLink="/dokumenti">Документи</a></li>
-                  </ul>
-                  <ul class="list-unstyled text-muted">
-                    <li><a routerLink="/proekti">Проекти</a></li>
-                    <li><a routerLink="/otvoreni_casovi">Отворени часови</a></li>
-                    <li><a routerLink="/predmeti">Предмети</a></li>
-                    <li><a routerLink="/nasoki">Насоки</a></li>
+                      <li><a routerLink="/home">{{link1}}</a></li>
+                      <li><a routerLink="/about">{{link2}}</a></li>
+                      <li><a routerLink="/novosti">{{link3}}</a></li>
+                    <li><a routerLink="/proekti">{{link4}}</a></li>
+                    <li><a routerLink="/nasoki">{{link5}}</a></li>
+                    <li><a routerLink="/upisi">{{link6}}</a></li>
                 </ul>
               </div>
 
               <div class="col-lg-6  col-md-9">
-                  <h3 class="text-white mb-3">ЃОРЧЕ ПЕТРОВ ц.о. Крива Паланка, Средно општинско училиште</h3>
-                  <p class="small text-muted">ул.8-ми Октомври бр. 91
-                    1330 Крива Паланка
-                    Република Северна Македонија</p>
+                  <h3 class="text-white mb-3">{{location}}</h3>
+                  <p class="small text-muted">{{loc}} </p>
                     <ul class="list-unstyled text-muted">
-                      <li><a href="https://www.google.com/maps/place/%D0%A1%D0%9E%D0%A3+%D0%83%D0%BE%D1%80%D1%87%D0%B5+%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2/@42.2059583,22.3393652,17z/data=!3m1!4b1!4m5!3m4!1s0x1355767d8a4779e5:0x13f9e5abc51105fc!8m2!3d42.2058279!4d22.3415188">Отвори на мапа</a></li>
+                      <li><a href="https://www.google.com/maps/place/%D0%A1%D0%9E%D0%A3+%D0%83%D0%BE%D1%80%D1%87%D0%B5+%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2/@42.2059583,22.3393652,17z/data=!3m1!4b1!4m5!3m4!1s0x1355767d8a4779e5:0x13f9e5abc51105fc!8m2!3d42.2058279!4d22.3415188"><mat-icon>map</mat-icon> {{map}}</a></li>
                   </ul>
 
 
