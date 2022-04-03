@@ -4,15 +4,15 @@
 
   <div class="moto_container">
 
-  <h1>НАШЕТО МОТО</h1>
+  <h1>{{title}}</h1>
 
     <p class="moto">
-      ЕДУКАЦИЈАТА НЕ Е ПОДГОТОВКА ЗА ЖИВОТ <br> <br> <br>  ЕДУКАЦИЈАТА Е САМИОТ ЖИВОТ.
+      {{moto1}} <br> <br> <br>  {{moto2}}
     </p>
 
     <p class="sub_moto">
-      Наша мисија е да ја препознаеме индивидуалноста која мора да биде <br>
-       во корелација со тимската работа која поттикнува креативност и создава квалитет.
+      {{sub_moto1}} <br>
+       {{sub_moto2}}
     </p>
 
   </div>
@@ -20,12 +20,12 @@
 
   <div class="right">
 
-   <a routerLink="">
+   <a [routerLink]="about">
      <div class="nav">
 
 
       <button mat-fab color="primary"><mat-icon>info</mat-icon></button>
-      <p> <br> За Гимназијата</p>
+      <p> <br>{{about_text}}</p>
 
 
 
@@ -36,11 +36,11 @@
 
 
 
-   <a routerLink="">
+   <a [routerLink]="contact">
      <div class="nav">
 
         <button mat-fab color="primary"><mat-icon>feedback</mat-icon></button>
-         <p> <br> Контактирај не</p>
+         <p> <br>{{contact_text}}</p>
 
      </div>
    </a>

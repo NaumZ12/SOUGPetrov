@@ -58,10 +58,20 @@ img{
 
 
 }
+.img{
+  width: 700px;
+  height: 300px;
+}
 
 .new{
   margin-left: 199px;
+  margin-top: 30px ;
   display:flex;
   align-items:center;
 
+}
+
+b{
+
+  font-size: 2rem;
 }

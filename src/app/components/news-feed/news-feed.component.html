@@ -4,7 +4,7 @@
     <nav>
       <h1>Вести и новости</h1>
 
-      <a routerLink="/novosti"><button color="primary"  mat-flat-button >Останати вести и новости <mat-icon>arrow_right</mat-icon>
+      <a [routerLink]="main_link"><button color="primary"  mat-flat-button >{{main_link_text}} <mat-icon>arrow_right</mat-icon>
       </button></a>
 
 
@@ -19,62 +19,53 @@
       <div class="carousel-item active">
         <div class="new">
           <p>
-            <img src="./assets/images/sport.jpeg" alt="">
+            <img [src]="img" alt=""> <br> <br>
 
-           <b>Something</b> ipsum dolor sit amet consectetur adipisicing elit. Ex, modi. Ea impedit ratione quis quaerat alias numquam delectus tempore dignissimos enim, dolores deserunt blanditiis distinctio reiciendis labore quam ab tenetur!
+           <b>{{title}}</b>
       <br>
-           <a routerLink="">Published in</a>
+           <a [routerLink]="link">Read More</a>
           </p>
 
           <p>
-            <img src="./assets/images/sport.jpeg" alt="">
+            <img [src]="img2" alt=""> <br> <br>
 
-            <b>Something</b> ipsum dolor sit amet consectetur adipisicing elit. Ex, modi. Ea impedit ratione quis quaerat alias numquam delectus tempore dignissimos enim, dolores deserunt blanditiis distinctio reiciendis labore quam ab tenetur!
+           <b>{{title2}}</b>
       <br>
-           <a routerLink="">Published in</a>
+           <a [routerLink]="link2">Read More</a>
           </p>
-
 
         </div>
       </div>
       <div class="carousel-item">
         <div class="new">
           <p>
-            <img src="./assets/images/sport.jpeg" alt="">
+            <img [src]="img3" alt=""> <br> <br>
 
-            <b>Something</b> ipsum dolor sit amet consectetur adipisicing elit. Ex, modi. Ea impedit ratione quis quaerat alias numquam delectus tempore dignissimos enim, dolores deserunt blanditiis distinctio reiciendis labore quam ab tenetur!
+           <b>{{title3}}</b>
       <br>
-           <a routerLink="">Published in</a>
+           <a [routerLink]="link3">Read More</a>
           </p>
 
           <p>
-            <img src="./assets/images/sport.jpeg" alt="">
+            <img [src]="img4" alt=""> <br> <br>
 
-            <b>Something</b> ipsum dolor sit amet consectetur adipisicing elit. Ex, modi. Ea impedit ratione quis quaerat alias numquam delectus tempore dignissimos enim, dolores deserunt blanditiis distinctio reiciendis labore quam ab tenetur!
+           <b>{{title4}}</b>
       <br>
-           <a routerLink="">Published in</a>
+           <a [routerLink]="link4">Read More</a>
           </p>
-
 
         </div>
       </div>
       <div class="carousel-item">
         <div class="new">
           <p>
-            <img src="./assets/images/sport.jpeg" alt="">
+            <img class="img" [src]="img5" alt=""> <br> <br>
 
-            <b>Something</b> sit amet consectetur adipisicing elit. Ex, modi. Ea impedit ratione quis quaerat alias numquam delectus tempore dignissimos enim, dolores deserunt blanditiis distinctio reiciendis labore quam ab tenetur!
+           <b>{{title5}}</b>
       <br>
-           <a routerLink="">Published in</a>
+           <a [routerLink]="link5">Read More</a>
           </p>
 
-          <p>
-            <img src="./assets/images/sport.jpeg" alt="">
-
-            <b>Something</b> sit amet consectetur adipisicing elit. Ex, modi. Ea impedit ratione quis quaerat alias numquam delectus tempore dignissimos enim, dolores deserunt blanditiis distinctio reiciendis labore quam ab tenetur!
-      <br>
-           <a routerLink="">Published in</a>
-          </p>
 
 
         </div>
