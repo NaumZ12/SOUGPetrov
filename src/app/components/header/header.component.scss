@@ -1,5 +1,5 @@
 $bg:rgb(34, 34, 34);
-$btn: 1px solid rgb(0, 221, 255);
+$btn: 1px solid #64ff64e1;
 
 @mixin display {
   display: flex;
@@ -63,14 +63,14 @@ img{
 .sign{
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid #90CAF9;
-  color: #90CAF9;
+  border: 1px solid #64ff64e1;
+  color: #64ff64e1;
   background-color: $bg;
   cursor: pointer;
 }
 
 .sign:hover{
-  background-color: #90CAF9;
+  background-color: #64ff64e1;
   color: white;
   transition: 0.5s;
 

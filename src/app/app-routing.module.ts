@@ -9,13 +9,23 @@ import { SignupPageComponent } from './pages/auth-page/signup-page/signup-page.c
 import { NovostiPageComponent } from './pages/main-pages/novosti-page/novosti-page.component';
 import { OneComponent } from './pages/main-pages/novosti-page/one/one.component';
 import { TwoComponent } from './pages/main-pages/novosti-page/two/two.component';
-import { SearchPageComponent } from './pages/main-pages/search-page/search-page.component';
 import { EngPagesComponent } from './pages/eng-pages/eng-pages.component';
 import { EngHomePageComponent } from './pages/eng-pages/home-page/home-page.component';
 import { EngProektiPageComponent } from './pages/eng-pages/proekti-page/proekti-page.component';
 import { EngNovostiPageComponent } from './pages/eng-pages/novosti-page/novosti-page.component';
 import { EngOneComponent } from './pages/eng-pages/novosti-page/one/one.component';
 import { EngTwoComponent } from './pages/eng-pages/novosti-page/two/two.component';
+import { EngNasokiPageComponent } from './pages/eng-pages/nasoki-page/nasoki-page.component';
+import { NasokiPageComponent } from './pages/main-pages/nasoki-page/nasoki-page.component';
+import { GoPageComponent } from './pages/main-pages/nasoki-page/go-page/go-page.component';
+import { EsPageComponent } from './pages/main-pages/nasoki-page/es-page/es-page.component';
+import { MsPageComponent } from './pages/main-pages/nasoki-page/ms-page/ms-page.component';
+import { UsPageComponent } from './pages/main-pages/nasoki-page/us-page/us-page.component';
+import { EngGoPageComponent } from './pages/eng-pages/nasoki-page/go-page/go-page.component';
+import { EngEsPageComponent } from './pages/eng-pages/nasoki-page/es-page/es-page.component';
+import { EngMsPageComponent } from './pages/eng-pages/nasoki-page/ms-page/ms-page.component';
+import { EngUsPageComponent } from './pages/eng-pages/nasoki-page/us-page/us-page.component';
+import { NasokaComponent } from './pages/main-pages/nasoki-page/nasoka/nasoka.component';
 
 
 
@@ -39,8 +49,30 @@ const routes: Routes = [
     },
     {
       path: 'nasoki',
-      data: {title: "НАСОКИ"},
-      component: ProektiPageComponent,
+      component: NasokiPageComponent,
+      children:[
+        {
+          path: 'izberi_nasoka',
+          component: NasokaComponent,
+        },
+        {
+          path: 'gimnazisko_obrazovanie',
+          component: GoPageComponent,
+        },
+        {
+          path: 'elektrotexnicka_struka',
+          component: EsPageComponent,
+        },
+        {
+          path: 'masinska_struka',
+          component: MsPageComponent,
+        },
+        {
+          path: 'ugostitelska_struka',
+          component: UsPageComponent,
+        },
+
+      ]
     },
     {
       path: 'upisi',
@@ -94,7 +126,30 @@ const routes: Routes = [
       {
         path: 'nasoki',
         data: {title: "НАСОКИ"},
-        component: EngProektiPageComponent,
+        component: EngNasokiPageComponent,
+        children:[
+          {
+            path: 'izberi_nasoka',
+            component: NasokaComponent,
+          },
+          {
+            path: 'gimnazisko_obrazovanie',
+            component: EngGoPageComponent,
+          },
+          {
+            path: 'elektrotexnicka_struka',
+            component: EngEsPageComponent,
+          },
+          {
+            path: 'masinska_struka',
+            component: EngMsPageComponent,
+          },
+          {
+            path: 'ugostitelska_struka',
+            component: EngUsPageComponent,
+          },
+
+        ]
       },
       {
         path: 'upisi',
@@ -172,10 +227,21 @@ export const SubPageComponent = [HomePageComponent,
    NovostiPageComponent,
    EngNovostiPageComponent,
    SigninPageComponent,
-   SearchPageComponent,
    SignupPageComponent,
    ProektiPageComponent,
-   EngProektiPageComponent
+   EngProektiPageComponent,
+   NasokiPageComponent,
+   EngNasokiPageComponent,
+   GoPageComponent,
+   EsPageComponent,
+   MsPageComponent,
+   UsPageComponent,
+   EngGoPageComponent,
+   EngEsPageComponent,
+   EngMsPageComponent,
+   EngUsPageComponent,
+   NasokaComponent,
+
 ]
 export const NovostPageComponent = [
   OneComponent,
