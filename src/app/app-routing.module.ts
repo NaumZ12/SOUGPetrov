@@ -4,14 +4,14 @@ import { AuthPageComponent } from './pages/auth-page/auth-page.component';
 import { HomePageComponent } from './pages/main-pages/home-page/home-page.component';
 import { MainPagesComponent } from './pages/main-pages/main-pages.component';
 import { SigninPageComponent } from './pages/auth-page/signin-page/signin-page.component';
-import { ProektiPageComponent } from './pages/main-pages/proekti-page/proekti-page.component';
+
 import { SignupPageComponent } from './pages/auth-page/signup-page/signup-page.component';
 import { NovostiPageComponent } from './pages/main-pages/novosti-page/novosti-page.component';
 import { OneComponent } from './pages/main-pages/novosti-page/one/one.component';
 import { TwoComponent } from './pages/main-pages/novosti-page/two/two.component';
 import { EngPagesComponent } from './pages/eng-pages/eng-pages.component';
 import { EngHomePageComponent } from './pages/eng-pages/home-page/home-page.component';
-import { EngProektiPageComponent } from './pages/eng-pages/proekti-page/proekti-page.component';
+
 import { EngNovostiPageComponent } from './pages/eng-pages/novosti-page/novosti-page.component';
 import { EngOneComponent } from './pages/eng-pages/novosti-page/one/one.component';
 import { EngTwoComponent } from './pages/eng-pages/novosti-page/two/two.component';
@@ -26,6 +26,18 @@ import { EngEsPageComponent } from './pages/eng-pages/nasoki-page/es-page/es-pag
 import { EngMsPageComponent } from './pages/eng-pages/nasoki-page/ms-page/ms-page.component';
 import { EngUsPageComponent } from './pages/eng-pages/nasoki-page/us-page/us-page.component';
 import { NasokaComponent } from './pages/main-pages/nasoki-page/nasoka/nasoka.component';
+import { EngAboutPageComponent } from './pages/eng-pages/about-page/about-page.component';
+import { ContactPageComponent } from './pages/main-pages/contact-page/contact-page.component';
+import { UpisiPageComponent } from './pages/main-pages/upisi-page/upisi-page.component';
+import { AboutPageComponent } from './pages/main-pages/about-page/about-page.component';
+import { EngUpisiPageComponent } from './pages/eng-pages/upisi-page/upisi-page.component';
+import { EngContactPageComponent } from './pages/eng-pages/contact-page/contact-page.component';
+import { UpEsPageComponent } from './pages/main-pages/upisi-page/es-page/es-page.component';
+import { UpGoPageComponent } from './pages/main-pages/upisi-page/go-page/go-page.component';
+import { UpUsPageComponent } from './pages/main-pages/upisi-page/us-page/us-page.component';
+import { UpMsPageComponent } from './pages/main-pages/upisi-page/ms-page/ms-page.component';
+import { UpisComponent } from './pages/main-pages/upisi-page/upis/upis.component';
+import { VuPageComponent } from './pages/main-pages/upisi-page/vu-page/vu-page.component';
 
 
 
@@ -43,7 +55,7 @@ const routes: Routes = [
 
     {
       path: 'about',
-      component: ProektiPageComponent,
+      component: AboutPageComponent,
       data: {title: "ЗА ГИМНАЗИЈАТА"},
 
     },
@@ -77,12 +89,39 @@ const routes: Routes = [
     {
       path: 'upisi',
       data: {title: "УПИСИ"},
-      component: ProektiPageComponent,
+      component: UpisiPageComponent,
+      children:[
+        {
+          path: 'izberi',
+          component: UpisComponent
+        },
+        {
+          path: 'upis_elktrotexnicka_struka',
+          component: UpEsPageComponent
+        },
+        {
+          path: 'upis_opsta_gimnazija',
+          component: UpGoPageComponent
+        },
+        {
+          path: 'upis_masinska_struka',
+          component: UpMsPageComponent
+        },
+        {
+          path: 'upis_ugostitelska_struka',
+          component: UpUsPageComponent
+        },
+        {
+          path: 'upis_za_vonredni_ucenici',
+          component: VuPageComponent
+        },
+      ]
+
     },
     {
       path: 'contackt',
       data: {title: "КОНТАКТ"},
-      component: ProektiPageComponent,
+      component: ContactPageComponent,
     },
     {
       path: 'novosti',
@@ -94,14 +133,8 @@ const routes: Routes = [
 
       ]
     },
-    {
-      path: 'proekti',
-      component: ProektiPageComponent,
-    },
-    {
-      path: 'e-nastava',
-      component: ProektiPageComponent,
-    },
+
+
 
     ]
   },
@@ -119,7 +152,7 @@ const routes: Routes = [
 
       {
         path: 'about',
-        component: EngProektiPageComponent,
+        component: EngAboutPageComponent,
         data: {title: "ЗА ГИМНАЗИЈАТА"},
 
       },
@@ -127,39 +160,43 @@ const routes: Routes = [
         path: 'nasoki',
         data: {title: "НАСОКИ"},
         component: EngNasokiPageComponent,
-        children:[
-          {
-            path: 'izberi_nasoka',
-            component: NasokaComponent,
-          },
-          {
-            path: 'gimnazisko_obrazovanie',
-            component: EngGoPageComponent,
-          },
-          {
-            path: 'elektrotexnicka_struka',
-            component: EngEsPageComponent,
-          },
-          {
-            path: 'masinska_struka',
-            component: EngMsPageComponent,
-          },
-          {
-            path: 'ugostitelska_struka',
-            component: EngUsPageComponent,
-          },
 
-        ]
       },
       {
         path: 'upisi',
         data: {title: "УПИСИ"},
-        component: EngProektiPageComponent,
+        component: EngUpisiPageComponent,
+        children:[
+          {
+            path: 'izberi',
+            component: UpisComponent,
+          },
+          {
+            path: 'upis_elktrotexnicka_struka',
+            component: UpEsPageComponent,
+          },
+          {
+            path: 'upis_opsta_gimnazija',
+            component: UpGoPageComponent,
+          },
+          {
+            path: 'upis_masinska_struka',
+            component: UpMsPageComponent,
+          },
+          {
+            path: 'upis_ugostitelska_Struka',
+            component: UpUsPageComponent,
+          },
+          {
+            path: 'upis_za_vonredni_ucenici',
+            component: VuPageComponent,
+          },
+        ]
       },
       {
         path: 'contackt',
         data: {title: "КОНТАКТ"},
-        component: EngProektiPageComponent,
+        component: EngContactPageComponent,
       },
       {
         path: 'novosti',
@@ -171,14 +208,8 @@ const routes: Routes = [
 
         ]
       },
-      {
-        path: 'proekti',
-        component: ProektiPageComponent,
-      },
-      {
-        path: 'e-nastava',
-        component: ProektiPageComponent,
-      },
+
+
 
     ]
   },
@@ -228,8 +259,6 @@ export const SubPageComponent = [HomePageComponent,
    EngNovostiPageComponent,
    SigninPageComponent,
    SignupPageComponent,
-   ProektiPageComponent,
-   EngProektiPageComponent,
    NasokiPageComponent,
    EngNasokiPageComponent,
    GoPageComponent,
@@ -241,6 +270,18 @@ export const SubPageComponent = [HomePageComponent,
    EngMsPageComponent,
    EngUsPageComponent,
    NasokaComponent,
+   UpisiPageComponent,
+   AboutPageComponent,
+   ContactPageComponent,
+   EngUpisiPageComponent,
+   EngAboutPageComponent,
+   UpEsPageComponent,
+   UpGoPageComponent,
+   UpUsPageComponent,
+   UpMsPageComponent,
+   VuPageComponent,
+   UpisComponent,
+
 
 ]
 export const NovostPageComponent = [

@@ -39,13 +39,39 @@ $text:white;
   margin: 0;
   padding: 0;
   outline: none;
+
+
 }
 body{
-  color: $text;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(40, 40, 40);
 
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

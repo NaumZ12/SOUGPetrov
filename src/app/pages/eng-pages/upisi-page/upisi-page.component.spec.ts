@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProektiPageComponent } from './proekti-page.component';
+import { UpisiPageComponent } from './upisi-page.component';
 
-describe('ProektiPageComponent', () => {
-  let component: ProektiPageComponent;
-  let fixture: ComponentFixture<ProektiPageComponent>;
+describe('UpisiPageComponent', () => {
+  let component: UpisiPageComponent;
+  let fixture: ComponentFixture<UpisiPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProektiPageComponent ]
+      declarations: [ UpisiPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProektiPageComponent);
+    fixture = TestBed.createComponent(UpisiPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

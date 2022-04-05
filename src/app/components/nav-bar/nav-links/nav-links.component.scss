@@ -1,18 +1,30 @@
 a{
+  color: rgba(200, 200, 200, 0.799);
+margin-left: 75px;
+
+
+}
+a:hover{
   color: white;
-margin-left: 40px;
-
-
 }
 
 a.active{
 
 button{
-  border-bottom: 2px solid #64ff64e1;
   color: #64ff64e1;
-  background-color: rgba(211, 211, 211, 0.108);
+border-bottom: 3px solid #64ff64e1;
+background-color: rgba(211, 211, 211, 0.108);
+
+border-bottom-left-radius:none ;
+border-bottom-right-radius:none ;
+border-top-left-radius:5px ;
+border-top-right-radius:5px ;
+
+
 
 }
+
+
 }
 
 button{
@@ -25,7 +37,7 @@ button{
 
 button:hover
 {
-  border-radius: 5px;
+
 
 background-color: rgba(255, 255, 255, 0.116) ;
 

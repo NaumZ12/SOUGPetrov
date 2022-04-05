@@ -41,7 +41,7 @@ import { TextComponent } from './components/text/text.component';
     NovostComponent,
     NovostPageComponent,
     TextComponent,
-    SearchBarComponent
+    SearchBarComponent,
 
 
   ],
