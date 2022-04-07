@@ -12,6 +12,8 @@ export class NovostComponent implements OnInit {
   @Input()  date:string = '';
   @Input()  by:string = '';
   @Input()  img:string = '';
+  @Input()  link:string = '';
+
 
 
    novosti = [

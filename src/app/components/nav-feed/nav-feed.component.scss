@@ -4,9 +4,9 @@
 .nav_container{
 
 
-  color: black;
+  color: rgb(255, 255, 255);
   position: relative;
-  top: 680px;
+  top: 735px;
   width:100%;
   height: 650px;
   padding-bottom: 5px;
@@ -20,8 +20,8 @@ h1{
   padding: 50px;
   margin-left: -40px;
   font-size: 4rem;
-  color: #34bbff50;
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.416);
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(0, 255, 51, 0.416);
   text-align: center;
 
 
@@ -31,7 +31,7 @@ h1{
   padding: 20px;
   position: absolute;
   top: 85px;
-  background-color: #34bbff7d;
+  background-color: #34ff420e;
   height: 70%;
   align-items: center;
 
@@ -39,21 +39,21 @@ h1{
       font-size: 2.3rem;
       padding: 50px;
       margin-left: -40px;
-      background-color: #64cbffe1;
+      background-color: #64ff64b0;
 
 
   }
 
   .sub_moto{
     padding: 10px;
-    color: rgb(80, 80, 80);
+    color: rgb(233, 233, 233);
 
   }
 }
 
 
 .right{
-  background-color: rgba(231, 231, 231, 0.545);
+
   padding: 100px;
   margin-left: 800px;
   display: flex;
@@ -65,7 +65,7 @@ h1{
 
 
     p{
-      color: black;
+      color: white;
       text-align: center;
       margin-left: -20px;
     }
@@ -76,11 +76,18 @@ h1{
   }
 }
 
+.button{
+  background-color: #64ff64b0;
+  outline: none;
+
+
+}
+
 mat-icon{
-  color: rgba(0, 0, 0, 0.457);
+  color: rgb(255, 255, 255);
 }
 
 p{
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
 }

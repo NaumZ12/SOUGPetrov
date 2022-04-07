@@ -1,12 +1,12 @@
 
 h1{
-  color:black;
+  color:white;
   margin-top: 22px;
   font-weight:600;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 .news-container{
-  background-color: rgba(238, 238, 238, 0.361);
+  background-color: rgba(97, 96, 96, 0.083);
   position: relative;
   top: 680px;
   width:100%;
@@ -26,6 +26,8 @@ nav{
   button{
   margin-top: 9px;
   margin-left: 20px;
+  outline: none;
+
 
   }
 
@@ -46,7 +48,7 @@ nav{
 p{
   width: 500px;
   margin-left: 50px;
-  color:black;
+  color:white;
 
 
 }
@@ -74,4 +76,8 @@ img{
 b{
 
   font-size: 2rem;
+}
+
+a{
+  color: rgb(0, 191, 255);
 }

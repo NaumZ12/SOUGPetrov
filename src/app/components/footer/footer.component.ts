@@ -22,6 +22,12 @@ export class FooterComponent implements OnInit {
 
 
 
+  @Input() route1:string = '';
+  @Input() route2:string = '';
+  @Input() route3:string = '';
+  @Input() route4:string = '';
+  @Input() route5:string = '';
+  @Input() route6:string = '';
 
 
 

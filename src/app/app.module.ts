@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, PageComponent, SubPageComponent, NovostPageComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -15,7 +14,7 @@ import { LangComponent } from './components/footer/lang/lang.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
@@ -24,12 +23,12 @@ import { NovostComponent } from './pages/main-pages/novosti-page/novost/novost.c
 
 
 import {NgxPaginationModule} from 'ngx-pagination';
+import { TextComponent } from './components/text/text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchBarComponent,
     NavBarComponent,
     NavLinksComponent,
     CarouselComponent,
@@ -41,10 +40,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     NavFeedComponent,
     NovostComponent,
     NovostPageComponent,
-
-
-
-
+    TextComponent,
+    SearchBarComponent,
 
 
   ],
