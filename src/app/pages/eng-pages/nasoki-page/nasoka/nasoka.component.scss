@@ -27,6 +27,6 @@ button{
 
 
 button:hover::after {
-  animation: 1s glitch;
+  animation: 1s ;
   animation-timing-function: steps(2, end);
 }

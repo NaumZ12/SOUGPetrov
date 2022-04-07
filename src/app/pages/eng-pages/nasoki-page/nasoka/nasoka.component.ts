@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './nasoka.component.html',
   styleUrls: ['./nasoka.component.scss']
 })
-export class NasokaComponent implements OnInit {
+export class EngNasokaComponent implements OnInit {
 
   constructor() { }
 

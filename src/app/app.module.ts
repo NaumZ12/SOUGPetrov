@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule, PageComponent, SubPageComponent, NovostPageComponent } from './app-routing.module';
+import { AppRoutingModule, PageComponent, SubPageComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MatIconModule } from '@angular/material/icon';
@@ -39,7 +39,6 @@ import { TextComponent } from './components/text/text.component';
     NewsFeedComponent,
     NavFeedComponent,
     NovostComponent,
-    NovostPageComponent,
     TextComponent,
     SearchBarComponent,
 

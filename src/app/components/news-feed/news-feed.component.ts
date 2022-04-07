@@ -17,7 +17,7 @@ export class NewsFeedComponent implements OnInit {
   @Input() title:string = '';
   @Input() title2:string = '';
   @Input() title3:string = '';
-  @Input() title4:string = '';
+  @Input()title4:string = '';
   @Input() title5:string = '';
 
   @Input() link:string = '';
@@ -27,6 +27,7 @@ export class NewsFeedComponent implements OnInit {
   @Input() link5:string = '';
 
   @Input() main_link:string = '';
+  @Input() main_title:string = '';
   @Input() main_link_text:string = '';
 
 
