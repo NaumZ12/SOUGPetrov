@@ -4,9 +4,9 @@ $btn-color:rgb(68, 68, 68);
 $radius: 5px;
 
 @mixin borders {
-  border-top: 2px solid rgba(139, 139, 139, 0.246);
-  border-left: 2px solid rgba(139, 139, 139, 0.246);
-  border-bottom: 2px solid rgba(139, 139, 139, 0.246);
+  border-top: 1.7px solid rgba(139, 139, 139, 0.246);
+  border-left: 1.7px solid rgba(139, 139, 139, 0.246);
+  border-bottom: 1.7px solid rgba(139, 139, 139, 0.246);
 
 
 }
@@ -45,7 +45,9 @@ input{
 
 
 input:focus{
-  border: 2px solid #64ff64e1;
+  border: 2px solid #a5fe9ee1;
+
+
 }
 button{
   width: 60px;
