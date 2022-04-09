@@ -37,6 +37,10 @@ import { EngNasokaComponent } from './pages/eng-pages/nasoki-page/nasoka/nasoka.
 
 const routes: Routes = [
   {
+    path: '',
+    component: MainPagesComponent,
+  },
+  {
     path: 'mk',
     component: MainPagesComponent,
     children: [
