@@ -30,7 +30,11 @@ export class FooterComponent implements OnInit {
   @Input() route6:string = '';
 
 
-
+  @Input() by:string= '';
+  @Input() naum:string = '';
+  @Input() viko:string = '';
+  @Input() ivan:string = '';
+  @Input() stefan:string = '';
 
 
 
